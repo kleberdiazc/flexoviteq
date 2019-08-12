@@ -39,3 +39,18 @@ img {
     --ion-color-shade: var(--ion-color-google-shade);
     --ion-color-tint: var(--ion-color-google-tint);
 }
+
+#rounded {
+    --width: 40%;
+    --height: 100px;
+    --moz-border-radius: 50px;
+    --webkit-border-radius: 50px;
+    --border-radius: 50px;
+    --margin-bottom: 50px;
+}
+
+#container {
+    --width: 300px;
+    --margin-left: auto;
+    --margin-right: auto;
+}
