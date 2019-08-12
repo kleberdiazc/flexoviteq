@@ -1,0 +1,41 @@
+ion-content {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#870110+1,000000+96 */
+    --background: #870110;
+    /* Old browsers */
+    --background: -moz-linear-gradient(top, #870110 1%, #000000 96%);
+    /* FF3.6-15 */
+    --background: -webkit-linear-gradient(top, #870110 1%, #000000 96%);
+    /* Chrome10-25,Safari5.1-6 */
+    --background: linear-gradient(to bottom, #870110 1%, #000000 96%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+img {
+    width: 150px;
+}
+
+.top-20 {
+    margin-top: 20%
+}
+
+.top-5 {
+    margin-top: 5%
+}
+
+.ion-color-facebook {
+    --ion-color-base: var(--ion-color-facebook);
+    --ion-color-base-rgb: var(--ion-color-facebook-rgb);
+    --ion-color-contrast: var(--ion-color-facebook-contrast);
+    --ion-color-contrast-rgb: var(--ion-color-facebook-contrast-rgb);
+    --ion-color-shade: var(--ion-color-facebook-shade);
+    --ion-color-tint: var(--ion-color-facebook-tint);
+}
+
+.ion-color-google {
+    --ion-color-base: var(--ion-color-google);
+    --ion-color-base-rgb: var(--ion-color-google-rgb);
+    --ion-color-contrast: var(--ion-color-google-contrast);
+    --ion-color-contrast-rgb: var(--ion-color-google-contrast-rgb);
+    --ion-color-shade: var(--ion-color-google-shade);
+    --ion-color-tint: var(--ion-color-google-tint);
+}
