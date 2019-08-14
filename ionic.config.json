@@ -1,5 +1,7 @@
 {
   "name": "flexoapp",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

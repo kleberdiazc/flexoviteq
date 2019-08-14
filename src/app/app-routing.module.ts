@@ -5,8 +5,10 @@ import { InicioComponent } from './components/inicio/inicio.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'login', pathMatch: 'full' },
-  { path: 'login', component: LoginComponent},
-  { path: 'inicio', component: InicioComponent}
+  { path: 'home', loadChildren: './pages/home/home.module#HomePageModule' },
+  { path: 'registro', loadChildren: './pages/registro/registro.module#RegistroPageModule' },
+  { path: 'login', loadChildren: './pages/login/login.module#LoginPageModule' },
+  { path: 'historial', loadChildren: './pages/historial/historial.module#HistorialPageModule' }
 ];
 
 @NgModule({
