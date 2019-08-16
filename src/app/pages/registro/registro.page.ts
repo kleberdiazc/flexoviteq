@@ -6,10 +6,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./registro.page.scss'],
 })
 export class RegistroPage implements OnInit {
-
+  registro = {
+    desc: '',
+    lugar: ''
+  };
   constructor() { }
-
+  
   ngOnInit() {
+  }
+  onSubmit(){
+    console.log('Form SUbmit');
   }
 
 }

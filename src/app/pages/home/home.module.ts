@@ -15,6 +15,10 @@ const routes: Routes = [
       {
         path: 'registro',
         loadChildren: '../registro/registro.module#RegistroPageModule'
+      },
+      {
+        path: 'historial',
+        loadChildren: '../historial/historial.module#HistorialPageModule'
       }
     ]
   }
