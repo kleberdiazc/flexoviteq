@@ -1,22 +1,31 @@
-<ion-content>
 
-    <form #formu="ngForm" ((ngSubmit)="onSubmit()" )>
+<ion-header>
+        <ion-toolbar>
+          <ion-title>Registro Tarea</ion-title>
+        </ion-toolbar>
+      </ion-header>
+<ion-content>
+<ion-grid>
+
+
+    <form #formu="ngForm" (ngSubmit)="onSubmit()">
         <ion-list>
+            <ion-list-header>Formulario Template : Valido {{formu.valid}}</ion-list-header>
             <ion-item>
                 <ion-label position="floating">Descripción</ion-label>
-                <ion-input type="Text" [(ngModel)]="desc"></ion-input>
+                <ion-input type="Text" name="desc" [(ngModel)]="registro.desc" required></ion-input>
             </ion-item>
             <ion-item>
                 <ion-label position="floating">Lugar:</ion-label>
-                <ion-input type="Text" [(ngModel)]="lugar"></ion-input>
+                <ion-input type="Text" name="lugar" [(ngModel)]="registro.lugar" required></ion-input>
             </ion-item>
             <ion-item>
-                <ion-label position="floating">OBservación:</ion-label>
-                <ion-input type="Text"></ion-input>
+                <ion-label position="floating">Observación:</ion-label>
+                <ion-input type="Text"  name="obs" [(ngModel)]="registro.obs" required></ion-input>
             </ion-item>
-
+            <ion-button expand="full" type="submit" [disabled]="formu.invalid">Registrar</ion-button>
         </ion-list>
 
     </form>
-
+</ion-grid>
 </ion-content>

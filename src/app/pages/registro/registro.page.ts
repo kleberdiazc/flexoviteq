@@ -8,7 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class RegistroPage implements OnInit {
   registro = {
     desc: '',
-    lugar: ''
+    lugar: '',
+    obs:''
   };
   constructor() { }
   
@@ -16,6 +17,7 @@ export class RegistroPage implements OnInit {
   }
   onSubmit(){
     console.log('Form SUbmit');
+    console.log(this.registro);
   }
 
 }

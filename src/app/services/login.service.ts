@@ -28,7 +28,7 @@ export class LoginService {
       contrasena
     };
     console.log(correo, contrasena);
-    return this.http.post('http://localhost:82/restfull/index.php/login', data).pipe(map(async (resp: any) => {
+    return this.http.post('http://www.flexoviteq.com.ec/rest/index.php/login', data).pipe(map(async (resp: any) => {
       if (resp.error) {
          const alert = await this.alertController.create({
           header: 'Error al Iniciar',
