@@ -17,7 +17,6 @@ export class RegistroPage implements OnInit {
   constructor(public navCtrl: NavController,
               public _tarea: TareasService,
               public router: Router) { }
-  
   ngOnInit() {
   }
   onSubmit(){
